@@ -4,9 +4,9 @@
   "private": true,
   "description": "Complete users + todos example for express-zod-router",
   "scripts": {
-    "dev": "tsx src/server.ts",
-    "start": "node dist/server.js",
-    "build": "tsc",
+    "dev": "node init && tsx src/server.ts",
+    "start": "node init && node dist/server.js",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

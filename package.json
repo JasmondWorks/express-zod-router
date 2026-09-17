@@ -27,7 +27,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^7.1.1",
+    "node-fetch": "^3.3.2",
     "swagger-ui-dist": "^5.32.13",
     "swagger-ui-express": "^5.0.1"
   },
